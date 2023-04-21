@@ -1,0 +1,22 @@
+.footer-container {
+    color: #E6E6E6;
+    background-color: #313232;
+    width: 100%;
+    min-height: 10vmin;
+    display: flex;
+    padding: 2em;
+}
+
+.info-container {
+    display: flex;
+    width: 60%;
+    justify-content:space-evenly;
+}
+.ucr-svg {
+    margin: 1em;
+    height: 10vmin;
+}
+
+.icon {
+    height: 5em;
+}
