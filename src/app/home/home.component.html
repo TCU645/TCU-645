@@ -1,5 +1,20 @@
-<div class="page-content main-background">
-    <app-navbar></app-navbar>
-    <p>home works!</p>
-</div>
+<app-navbar></app-navbar>
 
+<div class="page-content main-background">
+
+    <ngb-carousel [ngClass]="'carousel'">
+        <ng-template ngbSlide *ngFor="let image of images">
+            <div class="picsum-img-wrapper image-wrapper">
+                <img class="image" [src]="image" alt="" />
+            </div>
+        </ng-template>
+    </ngb-carousel>
+
+    <div class="info-container">
+        <p>Este proyecto corresponde a un Trabajo Comunal Universitario que se desarrolla en los Liceos Rurales del
+            territorio indígena de Chirripó cabécar. El fin de este proyecto es poder acercar las opciones de educación
+            superior pública costarricense a las comunidades indígenas cabécares de Chirripó, ya que una vez finalizada
+            la secundaria no existe claridad de cómo seguir estudiando, dónde poder estudiar, qué estudiar, ni cuáles
+            son los mecanismos para acceder a estas oportunidades de formación.</p>
+    </div>
+</div>
