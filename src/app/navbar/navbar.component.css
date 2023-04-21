@@ -4,6 +4,7 @@
 }
 
 .nav-header {
+    display: flex;
     align-items: center;
     width: 100%;
     height: 70%;
@@ -11,6 +12,19 @@
 
 .nav-header>.logo {
     height: 6em;
+    margin: 1em;
+    margin-left: 2em;
+}
+
+.nav-header>.tcu-logo-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: right;
+}
+
+.nav-header>.tcu-logo-container>.tcu-logo {
+    height: 4em;
     margin: 1em;
     margin-left: 2em;
 }
