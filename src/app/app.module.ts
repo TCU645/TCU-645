@@ -8,6 +8,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { ArticleListComponent } from './article-list/article-list.component';
+import { ArticleComponent } from './article/article.component';
+import { AboutComponent } from './about/about.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 
 @NgModule({
@@ -15,7 +19,11 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ArticleListComponent,
+    ArticleComponent,
+    AboutComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,
