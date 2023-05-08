@@ -1,14 +1,26 @@
-<nav class="nav-container">
+<nav [ngClass]="{'nav-container': !handsetData.isHandset(), 'nav-container-handset': handsetData.isHandset()}">
     <div class="nav-header">
         <img class="logo" src="assets/img/navbar/university_logo.png" alt="logo">
         <div class="tcu-logo-container">
             <img class="tcu-logo" src="assets/img/navbar/tcu_name.png" alt="logo">
         </div>
     </div>
-    <div class="nav-actions">
+
+
+    <div class="nav-actions" *ngIf="!handsetData.isHandset()">
         <button class="nav-button" routerLink="/app-home" routerLinkActive="active">Inicio</button>
         <button class="nav-button" routerLink="/app-article-list" routerLinkActive="active">Artículos</button>
         <button class="nav-button" routerLink="/app-resources" routerLinkActive="active">Materiales</button>
         <button class="nav-button" routerLink="/app-about" routerLinkActive="active">Sobre el TCU</button>
+    </div>
+    <div class="nav-actions-handset" *ngIf="handsetData.isHandset()">
+        <button *ngIf="this.collapsed" class="nav-menu-button" (click)="this.toggle()">Menu</button>
+        <button *ngIf="!this.collapsed" class="nav-menu-button" (click)="this.toggle()">Cerrar</button>
+        <div class="nav-button-container" [ngClass]="{'nav-button-container-extended': !this.collapsed}">
+            <button class="nav-button" routerLink="/app-home" routerLinkActive="active">Inicio</button>
+            <button class="nav-button" routerLink="/app-article-list" routerLinkActive="active">Artículos</button>
+            <button class="nav-button" routerLink="/app-resources" routerLinkActive="active">Materiales</button>
+            <button class="nav-button" routerLink="/app-about" routerLinkActive="active">Sobre el TCU</button>
+        </div>
     </div>
 </nav>
