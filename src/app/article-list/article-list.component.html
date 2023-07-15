@@ -2,6 +2,14 @@
 
 <div class="page-content main-background">
     <div class="page-title">Artículos</div>
+    <div class="articles-container">
+        <div class="article" (click)="this.loadArticle(article)"  *ngFor="let article of this.articles">
+            <h2>{{article.title}}</h2>
+            <img class="article-image" src="{{article.image}}">
+            <h3>Escrito por {{article.autor}}</h3>
+
+        </div>
+    </div>
 </div>
 
 <app-footer></app-footer>

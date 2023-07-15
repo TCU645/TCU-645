@@ -12,6 +12,8 @@ import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleComponent } from './article/article.component';
 import { AboutComponent } from './about/about.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { ResourcesComponent } from './resources/resources.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

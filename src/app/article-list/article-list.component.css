@@ -1,0 +1,25 @@
+.articles-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+    padding: 1rem;
+    background-color: #C2C1C0;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.article-image {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
