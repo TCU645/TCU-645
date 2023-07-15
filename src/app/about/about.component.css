@@ -1,129 +1,72 @@
-
-.paragraph{
-    display: flex;
-    text-align: center;
-    margin-left: 10em;
-    margin-right: 10em;
-}
-
-.paragraph p{
-    line-height: 1em;
-    font-size: 2.5em;
-}
-
-.paragraph ul{
-    line-height: 1em;
-    font-size: 3em;
-}
-
-.main-container{
-   color: white;
-}
-
-.blue-container {
+.objectives-container {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 3em;
-    background-color: #005DA4;
+    padding: 3rem;
+}
+
+.objectives-container p {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.activities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     width: 100%;
 }
 
-.blue-container h1{
-    margin-left: 2em;
-    font-size: 3em;
-    font-weight: bold;
-}
-
-.content-container{
-    display: flex;
-    column-count: 3;
-    width: 100%;
-    padding: 1em;
-    align-items: center;
-}
-
-.content-container img{
-    height: auto;
-    max-width: 10%;
-}
-
-.content-container_c2{
-    display: flex;
-    column-count: 2;
-    width: 100%;
-    padding: 1em;
-    align-items: center;
-}
-
-.content-container_c2 img{
-    height: auto;
-    max-width: 10%;
-}
-
-
-img {
-    border-radius: 1%;
-    width: 35em;
-}
-
-.list{
-    display: flex;
-}
-
-.list ul li{
-    line-height: 1em;
-    font-size: 2.5em;
-    margin-left: 5em;
-    margin-right: 3em;
-}
-
-.how-we-do-it-one {
+.activity {
     position: relative;
+    display: flex;
+    max-width: 70%;
     height: 40em;
-    width: 25em;
-    background-image: url("/assets/img/about/image1.jpg"); 
-    background-size: 25em;
+    flex-grow: 1;
+    flex-basis: 300px;
+    flex-direction: column;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-bottom: 4em;     
+    overflow: hidden;
 }
 
-.how-we-do-it-two {
-    position: relative;
-    margin-left: 25em;
-    height: 40em;
-    width: 25em;
-    background-image: url("/assets/img/about/image3.jpg"); 
-    background-size: 25em;
-}
-
-.how-we-do-it-three {
-    position: relative;
-    margin-left: 25em;
-    height: 40em;
-    width: 25em;
-    background-image: url("/assets/img/about/image4.jpg"); 
-    background-size: 25em;
-}
-
-.rectangle{
-    width:18em; 
-    height:13em; 
-    background:#005DA4;
+.activity-text {
     position: absolute;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    padding: 1em;
     bottom: 0;
 }
 
-.middle-container {
-    padding-top: 3em;
-    width: 100%;
+.activity-image {
+    height: inherit;
+    width: max-content;
 }
 
-.middle-container h1{
-    margin-left: 2em;
-    font-size: 3em;
-    font-weight: bold;
+.local-margin {
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
-.rectangle h1{
-    margin-left: 0em;
-    font-size: 2em;
-    font-weight: bold;
+h1 {
+    padding-top: 2rem;
+}
+
+.recomendations-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recomendation-image-container {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 300px;
+    justify-content: center;
+    width: 40%;
+    padding: 2em;
+}
+
+.recomendation-image {
+    width: 60%;
 }
