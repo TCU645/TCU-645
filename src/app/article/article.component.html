@@ -1,7 +1,14 @@
 <app-navbar></app-navbar>
 
 <div class="page-content main-background">
-    <div class="page-title">Título Artículo</div>
+    <h1>{{this.article!.title}}</h1>
+    <div class="image-container">
+        <img class="article-image" src="{{this.article.image}}" alt="imagen">
+    </div>
+    <div class="article-body">
+        <p *ngFor="let paragraph of this.article.paragraphs">{{paragraph}}</p>
+        <p>Escrito por {{this.article.autor}}</p>
+    </div>
 </div>
 
 <app-footer></app-footer>

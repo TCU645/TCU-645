@@ -1,12 +1,12 @@
 export class Article {
     autor: string | undefined
-    text: string | undefined
+    paragraphs: string[] | undefined
     image: string | undefined
     title: string | undefined
 
-    constructor({autor, text, image, title}: {autor?: string, text?: string, image?: string, title?: string}) {
+    constructor({autor, paragraphs, image, title}: {autor?: string, paragraphs?: string[], image?: string, title?: string}) {
         this.autor = autor;
-        this.text = text;
+        this.paragraphs = paragraphs;
         this.image = image;
         this.title = title;
     }

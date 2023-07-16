@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Article } from 'src/model/Article';
 import { ArticleService } from 'src/service/ArticleService';
 
@@ -9,15 +10,17 @@ import { ArticleService } from 'src/service/ArticleService';
 })
 export class ArticleListComponent {
 
-  articles: Article[] = []
+  articles: Article[] = [];
+  loaded: boolean = false;
 
-  constructor(private articleService: ArticleService) {
- }
+  constructor(private articleService: ArticleService, private router: Router) {
+  }
 
   ngOnInit(): void {
     this.articleService.getArticles().subscribe(
       (articles: Article[]) => {
         this.articles = articles;
+        this.loaded = true;
       },
       (error) => {
         console.error('Failed to load articles:', error);
@@ -26,7 +29,7 @@ export class ArticleListComponent {
   }
 
   loadArticle(article: Article): void {
-    console.log(article.title)
+    this.router.navigate(['/app-article'], { state: { article: article } });
   }
-  
+
 }

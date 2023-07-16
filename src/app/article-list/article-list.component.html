@@ -1,13 +1,13 @@
 <app-navbar></app-navbar>
 
 <div class="page-content main-background">
-    <h1>Artículos</h1>
+    <h1 *ngIf="!this.loaded">Cargando...</h1>
+    <h1 *ngIf="this.loaded">Artículos</h1>
     <div class="articles-container">
         <div class="article" (click)="this.loadArticle(article)"  *ngFor="let article of this.articles">
             <h2>{{article.title}}</h2>
             <img class="article-image" src="{{article.image}}">
             <h3>Escrito por {{article.autor}}</h3>
-
         </div>
     </div>
 </div>
