@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="page-content main-background">
-    <div class="page-title">Artículos</div>
+    <h1>Artículos</h1>
     <div class="articles-container">
         <div class="article" (click)="this.loadArticle(article)"  *ngFor="let article of this.articles">
             <h2>{{article.title}}</h2>
