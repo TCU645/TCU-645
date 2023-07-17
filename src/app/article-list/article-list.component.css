@@ -4,6 +4,11 @@
     flex-wrap: wrap;
 }
 
+.article:hover {
+    background-color: #313232;
+    color: #C2C1C0;
+}
+
 .article {
     display: flex;
     flex-direction: column;
