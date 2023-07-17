@@ -1,11 +1,12 @@
 <app-navbar></app-navbar>
 
+<div (click)="goBack()" class="back-button background-light-gray">Regresar</div>
 <div class="page-content main-background">
     <h1>{{this.article!.title}}</h1>
     <div class="image-container">
         <img class="article-image" src="{{this.article.image}}" alt="imagen">
     </div>
-    <div class="article-body">
+    <div class="article-body background-light-gray">
         <p *ngFor="let paragraph of this.article.paragraphs">{{paragraph}}</p>
         <p>Escrito por {{this.article.autor}}</p>
     </div>

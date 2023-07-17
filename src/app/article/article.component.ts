@@ -20,5 +20,10 @@ export class ArticleComponent {
       this.router.navigate(['/app-article-list'], {});
     }
   }
+
+
+  goBack(): void {
+    this.router.navigate(['/app-article-list'], {});
+  }
 }
 
