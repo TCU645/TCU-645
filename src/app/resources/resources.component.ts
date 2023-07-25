@@ -34,10 +34,6 @@ export class ResourcesComponent {
               element.image="/assets/img/resources/pdf.png";
               break;
             }
-            case 'doc' || 'docx':{
-              element.image="/assets/img/resources/word.png";
-              break;
-            }
             case 'doc': case 'docx':{
               element.image="/assets/img/resources/word.png";
               break;
