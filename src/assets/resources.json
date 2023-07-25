@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Ejemplo pdf",
+        "date": "Ultima vez modificado (1 de junio de 2022)",
+        "document":"/assets/docs/Talleres Examen Admisión-.pdf"
+    },
+    {
+        "title": "ejemplo excel",
+        "date": "Ultima vez modificado (2 de junio de 2022)",
+        "document":"/assets/docs/Libro1.xlsx"
+    },
+    {
+        "title": "Ejemplo Powerpoint",
+        "date": "Ultima vez modificado (3 de junio de 2022)",
+        "document":"/assets/docs/prueba.pptx"
+    },
+    {
+        "title": "Ejemplo Word",
+        "date": "Ultima vez modificado (4 de junio de 2022)",
+        "document":"/assets/docs/Actividad introduccion.docx"
+    },
+    {
+        "title": "Ejemplo enlace",
+        "date": "Ultima vez modificado (10 de junio de 2022)",
+        "document":"https://www.facebook.com/Sikua.Ditso645"
+    }
+]

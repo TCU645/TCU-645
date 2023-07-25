@@ -1,7 +1,17 @@
 <app-navbar></app-navbar>
 
 <div class="page-content main-background">
-    <h1>Materiales</h1>
+    <h1 *ngIf="!this.loaded">Cargando...</h1>
+    <h1 *ngIf="this.loaded">Materiales</h1>
+    <div class="resources-container" >
+        <div class="resource" *ngFor="let resource of this.resources" target="_blank" >
+            <h2>{{resource.title}}</h2>
+            <h2>{{resource.date}}</h2>
+            <img class="resource-image" src="{{resource.image}}">
+            <a href="{{resource.document}}" target="_blank">Descargar</a>
+            <!-- <div (click)="this.downloadDocument(resource)" class="download-button background-light-gray">Descargar</div> -->
+        </div>
+    </div>
 </div>
 
 <app-footer></app-footer>
