@@ -1,12 +1,15 @@
 .image-container {
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .article-image {
     width: 60%;
     height: auto;
+    margin-right: 10px;
 }
+
 
 .article-body {
     padding: 1em;
